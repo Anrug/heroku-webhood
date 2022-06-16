@@ -41,7 +41,7 @@ Mes = ['Анонимный']
 @bot.message_handler(commands=['start'])
 def start(message):
 
-    bot.send_message(message.chat.id, "Здравствуйте, Я - бот который принимает жалобы, пожелания и личные обращения", 
+    bot.reply_to(message.chat.id, "Здравствуйте, Я - бот который принимает жалобы, пожелания и личные обращения", 
     parse_mode='html', reply_markup=markup)
 
 
